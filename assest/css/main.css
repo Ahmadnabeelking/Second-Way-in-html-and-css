@@ -1,0 +1,89 @@
+@import url(./base.css);
+@import url(./root.css);
+
+*{
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.background-image{
+    background-image: url('../img/header/background.png');
+    min-height: 100vh;
+    background-size: cover;
+    background-color: rgba(61, 61, 107, 0.80);
+    background-blend-mode:overlay;
+}
+
+.nav{
+    position: fixed;
+    border: 1px var(--white-color) solid;
+    background-color: var(--white-color);
+    top: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 1440px;
+}
+
+.dispaly-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1229px;
+}
+
+.list-item{
+    list-style: none;
+    gap: 20px;
+}
+
+.list-item a{
+    text-decoration: none;
+}
+
+.list-soclail a {
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    padding: 11px 8px;
+}
+
+.list-soclail a img{
+    width: 24px;
+    height: 15px;
+}
+
+.swiper{
+    position: relative;
+    top: 110px;
+}
+
+.swiper-heading-one{
+    font-size: var(--font-size-big);
+    width: 50%;
+    color: var(--white-color);
+}
+.swiper span{
+    color: transparent;
+    font-size: 70px;
+    -webkit-text-stroke: 1px var(--secondary-color) ;
+    font-weight: 400;
+}
+
+.swiper-paragraph{
+    color: var(--white-color);
+    font-size: 18px;
+    line-height: 35px;
+    width: 55%;
+    margin-bottom: 35px;
+}
+
+.btn{
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 20px 30px;
+}
